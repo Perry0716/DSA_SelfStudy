@@ -1,2 +1,4 @@
 # DSA_SelfStudy
-Solution of data structures and algorithms questions from different sources.
+Solution of data structures and algorithms questions from different sources.<br>
+Author : Perry<br>
+Resources for questions : Youtube , Websites
