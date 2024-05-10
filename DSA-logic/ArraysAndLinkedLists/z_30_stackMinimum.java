@@ -8,7 +8,6 @@ class main3 {
     public static class CustomStack {
         Stack<Integer> allData;
         Stack<Integer> minData;
-        int tos;
 
         public CustomStack() {
             allData = new Stack<>();
@@ -23,7 +22,7 @@ class main3 {
 
         void push(int val) {
         allData.push(val);
-        if(minData.size() == 0 || val <= minData.size()){
+        if(minData.size() == 0 || val <= minData.peek()){
             minData.push(val);
         }
         }
@@ -36,7 +35,7 @@ class main3 {
             }
             else {
                 int val = allData.pop();
-                if(val == minData.pop()){
+                if(val == minData.peek()){
                     minData.pop();
                 }
                 return val;
